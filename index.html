@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script src="/JS/jquery-3.1.0.js"></script>
+    <script src="/JS/jquery.fullPage.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/CSS/jquery.fullPage.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/CSS/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:700" rel="stylesheet">
+  </head>
+  <body>
+    <!-- navigation bar -->
+    <header>
+      <div class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button"class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+              <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+            </button>
+            <img src="/Images/logo.png" class="navbar-brand">
+            <!-- <a href="#" class="navbar-brand"> DELICIOUS</a> -->
+          </div>
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#page1">HOME</a></li>
+              <li><a href="#page2">ABOUT US</a></li>
+              <li><a href="#page4">GALLERY</a></li>
+              <li><a href="#page5">CONTACTS</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--navigation bar end-->
+    <!--main content-->
+    <div id="wrapper">
+
+
+
+      <div id="main" class="section" data-anchor="page1">
+        <div class="container logo-container">
+          <h1>DELICIOUS</h1>
+          <h3>HEALTHY & NATURAL FOOD</h3>
+        </div>
+      </div>
+      <div id="about" class="section" data-anchor="page2">
+        <div class="container" id="text-wrapper">
+          <p>
+            VESTIBULUM SAPIEN MI, EGASTAS PEC NORTA <br>
+            AT, PHARETRA SIT AMEN MASSA. PRAESANT <br>
+            MAGNA LECTUS, FRINGILLA ET EGESTAS SIT <br>
+            AMET, ACCUMSAN VITAE QUAM. VIVAMUS <br>
+            PLACERAT SAGITTIS AUGUE.
+          </p>
+        </div>
+      </div>
+      <div id="gallery" class="section" data-anchor="page3" >
+        <div class="container logo-container">
+        <h1 id="gallery-logo">GALLERY</h1>
+        </div>
+      </div>
+      <div id="gallery-menu" class="section" data-anchor="page4">
+        <div class="row">
+             <img class="gallery-image"src="Images/Photo%201.jpg">
+             <img class="gallery-image"src="Images/Photo%202.jpg">
+             <img class="gallery-image"src="Images/Photo%203.jpg">
+        </div>
+        <div class="row">
+            <img class="gallery-image" src="Images/Photo%204.jpg">
+             <img class="gallery-image"src="Images/Photo%205.jpg">
+             <img class="gallery-image"src="Images/Photo%206.jpg">
+        </div>
+      </div>
+      <div id="contact" class="section" data-anchor="page5">
+        <div class="container" id="formContainer">
+          <h2>SEND US A MESSAGE</h2>
+          <form class="" action="" method="">
+            <div class="form-group">
+              <input type="text" placeholder="NAME:" class="form-control" value=""/>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="COUNTRY:" class="form-control" value=""/>
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="E-MAIL:" class="form-control" value=""/>
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="TELEPHONE:" class="form-control" value=""/>
+            </div>
+            <div class="form-group" id="message">
+              <input type="text" id="message" placeholder="MESSAGE:" class="form-control" value=""/>
+            </div>
+            <button id="formButton">SEND US A MESSAGE</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function(){
+        $('#wrapper').fullpage();
+      });
+    </script>
+  </body>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</html>
