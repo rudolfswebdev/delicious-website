@@ -113,15 +113,15 @@ p
 }
 #main
 {
-  background-image: url("/Images/1.png");
+  background-image: url("../Images/1.png");
 }
 #about
 {
-  background-image: url("/Images/2.png");
+  background-image: url("../Images/2.png");
 }
 #gallery
 {
-    background-image: url("/Images/3.png");
+    background-image: url("../Images/3.png");
 }
 .row
 {
