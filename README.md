@@ -1,0 +1,1 @@
+Lapa veidota uz XAMPP
